@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[Game]
+(
+	[Id] BIGINT NOT NULL IDENTITY,
+	[Name] NVARCHAR(50) NOT NULL,
+	[Year] INT NOT NULL,
+	[Editor] NVARCHAR(50),
+	[Studio] NVARCHAR(50),
+
+	CONSTRAINT PK_GAME PRIMARY KEY([Id]),
+	CONSTRAINT UK_GAME__Name_Year UNIQUE([Name], [Year])
+)
