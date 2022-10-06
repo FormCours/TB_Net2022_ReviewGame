@@ -15,5 +15,15 @@ namespace ReviewGameAzure.API.DTO.Mappers
             };
         }
 
+
+
+        public static CategoryEntity ToEntity(this CategoryDataDTO data)
+        {
+            return new CategoryEntity()
+            {
+                Name = data.Name,
+                Description = data.Description
+            };
+        }
     }
 }

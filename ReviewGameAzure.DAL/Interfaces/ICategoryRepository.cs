@@ -12,5 +12,6 @@ namespace ReviewGameAzure.DAL.Interfaces
         // Permet de définir une interface pour le Repository avec le typpage
 
         // Permet d'ajouter des méthode spécifique pour ce Repository
+        IEnumerable<CategoryEntity> GetByName(string name);
     }
 }
