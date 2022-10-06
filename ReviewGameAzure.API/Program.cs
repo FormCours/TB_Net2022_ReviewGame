@@ -1,6 +1,13 @@
+using ReviewGameAzure.DAL.Interfaces;
+using ReviewGameAzure.DAL.Repository;
+using System.Data;
+using System.Data.SqlClient;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddTransient<IDbConnection>(service => new SqlConnection(builder.Configuration.GetConnectionString("default")));
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -68,9 +68,10 @@
     <Build Include="Tables\Review.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\Init.PostDeployment.sql" />
+    <PostDeploy Include="Data\Init.PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ReviewGameAzure.DB.publish.xml" />
+    <None Include="Local.DB.publish.xml" />
   </ItemGroup>
 </Project>

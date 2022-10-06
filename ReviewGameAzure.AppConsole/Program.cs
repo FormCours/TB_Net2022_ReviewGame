@@ -3,8 +3,8 @@ using System.Data.SqlClient;
 
 
 // Connection String for Azure DB
-string dbUsername = "Votre login SQL";
-string dbPwd = "Votre mot de passe !";
+string dbUsername = "della-duck";
+string dbPwd = "tb2022-Test123.";
 
 string connectionString = $"Server=tcp:tb2022-bstorm-server.database.windows.net,1433;Initial Catalog=demo-azure;Persist Security Info=False;User ID={dbUsername};Password={dbPwd};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
